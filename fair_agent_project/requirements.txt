@@ -1,6 +1,0 @@
-transformers
-torch
-datasets
-pandas
-langchain
-scikit-learn

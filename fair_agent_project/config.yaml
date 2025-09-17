@@ -1,8 +1,0 @@
-finance_model: "meta-llama/Llama-2-7b-hf"
-medical_model: "google/biobert_v1.1_pubmed"  # or any available open med model
-finance_datasets:
-  - "ibm-research/finqa"
-  - "NExTplusplus/TAT-QA"
-medical_datasets:
-  - "physionet/mimiciv"
-  - "pubmedqa/pubmedqa"
