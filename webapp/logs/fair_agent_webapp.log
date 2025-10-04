@@ -2602,3 +2602,15 @@ INFO 2025-10-04 19:30:29,151 basehttp 26988 6237827072 "GET /query/ HTTP/1.1" 20
 INFO 2025-10-04 19:46:25,119 basehttp 26988 6237827072 "GET / HTTP/1.1" 200 16512
 INFO 2025-10-04 19:46:25,429 basehttp 26988 6237827072 "GET / HTTP/1.1" 200 16512
 INFO 2025-10-04 19:46:26,828 basehttp 26988 6237827072 "GET /query/ HTTP/1.1" 200 53126
+INFO 2025-10-04 19:47:03,391 autoreload 26988 8622966784 /Users/somesh/Documents/Fair-Agent/src/data_sources/internet_rag.py changed, reloading.
+INFO 2025-10-04 19:47:07,415 rag_system 43137 8622966784 Loaded 8 evidence sources
+INFO 2025-10-04 19:47:08,222 finance_agent 43137 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 19:47:08,223 rag_system 43137 8622966784 Loaded 8 evidence sources
+INFO 2025-10-04 19:47:08,691 medical_agent 43137 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 19:47:08,691 orchestrator 43137 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 19:47:09,105 SentenceTransformer 43137 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 19:47:09,105 SentenceTransformer 43137 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 19:47:10,041 faithfulness 43137 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 19:47:10,041 safety 43137 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 19:47:10,041 services 43137 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 19:47:10,050 autoreload 43137 8622966784 Watching for file changes with StatReloader
