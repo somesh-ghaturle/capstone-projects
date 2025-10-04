@@ -2614,3 +2614,393 @@ INFO 2025-10-04 19:47:10,041 faithfulness 43137 8622966784 Initialized embedding
 WARNING 2025-10-04 19:47:10,041 safety 43137 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
 INFO 2025-10-04 19:47:10,041 services 43137 8622966784 FAIR-Agent system initialized successfully
 INFO 2025-10-04 19:47:10,050 autoreload 43137 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 19:47:28,084 basehttp 43137 6200340480 "GET / HTTP/1.1" 200 16512
+INFO 2025-10-04 19:47:29,031 basehttp 43137 6200340480 "GET /query/ HTTP/1.1" 200 53126
+INFO 2025-10-04 19:47:39,081 views 43137 6200340480 Processing query with model: llama3.2:latest
+INFO 2025-10-04 19:47:39,087 services 43137 6200340480 Switching models from gpt2 to llama3.2:latest
+INFO 2025-10-04 19:47:39,088 rag_system 43137 6200340480 Loaded 8 evidence sources
+INFO 2025-10-04 19:47:39,097 finance_agent 43137 6200340480 Finance Agent using Ollama model: llama3.2:latest
+INFO 2025-10-04 19:47:39,097 rag_system 43137 6200340480 Loaded 8 evidence sources
+INFO 2025-10-04 19:47:39,102 medical_agent 43137 6200340480 Medical Agent using Ollama model: llama3.2:latest
+INFO 2025-10-04 19:47:39,103 orchestrator 43137 6200340480 Orchestrator initialized successfully
+INFO 2025-10-04 19:47:39,112 services 43137 6200340480 Agents reinitialized with model: llama3.2:latest
+INFO 2025-10-04 19:47:39,113 finance_agent 43137 6200340480 Generating response using Ollama model (llama3.2:latest)
+INFO 2025-10-04 19:47:39,113 ollama_client 43137 6200340480 Calling Ollama API with model: llama3.2:latest
+INFO 2025-10-04 19:47:51,144 finance_agent 43137 6200340480 Enhanced response with Internet RAG (1 sources)
+INFO 2025-10-04 19:47:51,145 rag_system 43137 6200340480 Enhanced response with 0 evidence sources
+INFO 2025-10-04 19:47:51,146 finance_agent 43137 6200340480 Added evidence context (coverage: 0.00)
+INFO 2025-10-04 19:47:51,148 disclaimer_system 43137 6200340480 Added 1 disclaimers to response
+INFO 2025-10-04 19:47:51,149 disclaimer_system 43137 6200340480 Enhanced response with safety improvement: 0.20
+INFO 2025-10-04 19:47:51,149 finance_agent 43137 6200340480 Applied FAIR enhancement (safety: 0.20)
+INFO 2025-10-04 19:47:51,151 finance_agent 43137 6200340480 Finance response enhanced with all systems: safety (+0.00), evidence (+0.00), reasoning (+0.00), internet (+0.00)
+INFO 2025-10-04 19:47:51,471 basehttp 43137 6200340480 "POST /api/query/process/ HTTP/1.1" 200 6546
+INFO 2025-10-04 20:01:58,913 views 43137 6200340480 Processing query with model: llama3.2:latest
+INFO 2025-10-04 20:01:58,925 medical_agent 43137 6200340480 Generating response using Ollama model (llama3.2:latest)
+INFO 2025-10-04 20:01:58,925 ollama_client 43137 6200340480 Calling Ollama API with model: llama3.2:latest
+INFO 2025-10-04 20:02:07,432 rag_system 43137 6200340480 Enhanced response with 2 evidence sources
+INFO 2025-10-04 20:02:07,433 medical_agent 43137 6200340480 Added medical evidence context (coverage: 0.33)
+INFO 2025-10-04 20:02:07,434 disclaimer_system 43137 6200340480 Added 1 disclaimers to response
+INFO 2025-10-04 20:02:07,434 disclaimer_system 43137 6200340480 Enhanced response with safety improvement: 0.25
+INFO 2025-10-04 20:02:07,434 medical_agent 43137 6200340480 Applied FAIR enhancement for medical response (safety: 0.25)
+INFO 2025-10-04 20:02:07,434 medical_agent 43137 6200340480 Medical response enhanced with all systems: safety (+0.75), evidence (+0.00), reasoning (+0.00)
+INFO 2025-10-04 20:02:07,680 basehttp 43137 6200340480 "POST /api/query/process/ HTTP/1.1" 200 8015
+INFO 2025-10-04 20:05:27,128 basehttp 43137 6200340480 "GET / HTTP/1.1" 200 16512
+INFO 2025-10-04 20:05:28,157 basehttp 43137 6200340480 "GET /query/ HTTP/1.1" 200 44137
+INFO 2025-10-04 20:05:49,148 views 43137 6200340480 Processing query with model: llama3.2:latest
+INFO 2025-10-04 20:05:49,156 medical_agent 43137 6200340480 Generating response using Ollama model (llama3.2:latest)
+INFO 2025-10-04 20:05:49,156 ollama_client 43137 6200340480 Calling Ollama API with model: llama3.2:latest
+INFO 2025-10-04 20:05:59,136 medical_agent 43137 6200340480 Enhanced response with Internet RAG for medical query (1 sources)
+INFO 2025-10-04 20:05:59,137 rag_system 43137 6200340480 Enhanced response with 2 evidence sources
+INFO 2025-10-04 20:05:59,138 medical_agent 43137 6200340480 Added medical evidence context (coverage: 0.33)
+INFO 2025-10-04 20:05:59,139 disclaimer_system 43137 6200340480 Added 1 disclaimers to response
+INFO 2025-10-04 20:05:59,140 disclaimer_system 43137 6200340480 Enhanced response with safety improvement: 0.25
+INFO 2025-10-04 20:05:59,140 medical_agent 43137 6200340480 Applied FAIR enhancement for medical response (safety: 0.25)
+INFO 2025-10-04 20:05:59,141 medical_agent 43137 6200340480 Medical response enhanced with all systems: safety (+0.75), evidence (+0.00), reasoning (+0.00)
+INFO 2025-10-04 20:05:59,325 basehttp 43137 6200340480 "POST /api/query/process/ HTTP/1.1" 200 12140
+INFO 2025-10-04 20:09:00,677 basehttp 43137 6200340480 "GET / HTTP/1.1" 200 16512
+INFO 2025-10-04 20:09:01,661 basehttp 43137 6200340480 "GET /query/ HTTP/1.1" 200 43448
+INFO 2025-10-04 20:10:40,658 basehttp 43137 6200340480 "GET / HTTP/1.1" 200 16512
+INFO 2025-10-04 20:10:41,544 basehttp 43137 6200340480 "GET /query/ HTTP/1.1" 200 44300
+INFO 2025-10-04 20:14:40,546 autoreload 43137 8622966784 /Users/somesh/Documents/Fair-Agent/src/evidence/rag_system.py changed, reloading.
+INFO 2025-10-04 20:14:44,486 rag_system 46238 8622966784 Loaded 8 evidence sources
+INFO 2025-10-04 20:14:45,494 finance_agent 46238 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:14:45,494 rag_system 46238 8622966784 Loaded 8 evidence sources
+INFO 2025-10-04 20:14:46,037 medical_agent 46238 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:14:46,037 orchestrator 46238 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:14:46,465 SentenceTransformer 46238 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:14:46,465 SentenceTransformer 46238 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:14:47,402 faithfulness 46238 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:14:47,402 safety 46238 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:14:47,403 services 46238 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:14:47,411 autoreload 46238 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:14:58,166 autoreload 46238 8622966784 /Users/somesh/Documents/Fair-Agent/src/evidence/rag_system.py changed, reloading.
+INFO 2025-10-04 20:15:00,905 rag_system 46286 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:15:00,905 rag_system 46286 8622966784    Medical: 8
+INFO 2025-10-04 20:15:00,905 rag_system 46286 8622966784    Finance: 8
+INFO 2025-10-04 20:15:01,493 finance_agent 46286 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:15:01,500 rag_system 46286 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:15:01,500 rag_system 46286 8622966784    Medical: 8
+INFO 2025-10-04 20:15:01,500 rag_system 46286 8622966784    Finance: 8
+INFO 2025-10-04 20:15:02,118 medical_agent 46286 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:15:02,118 orchestrator 46286 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:15:02,522 SentenceTransformer 46286 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:15:02,522 SentenceTransformer 46286 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:15:03,360 faithfulness 46286 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:15:03,361 safety 46286 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:15:03,361 services 46286 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:15:03,368 autoreload 46286 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:15:21,508 autoreload 46286 8622966784 /Users/somesh/Documents/Fair-Agent/src/evidence/rag_system.py changed, reloading.
+INFO 2025-10-04 20:15:24,288 rag_system 46343 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:15:24,288 rag_system 46343 8622966784    Medical: 8
+INFO 2025-10-04 20:15:24,288 rag_system 46343 8622966784    Finance: 8
+INFO 2025-10-04 20:15:24,840 finance_agent 46343 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:15:24,847 rag_system 46343 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:15:24,847 rag_system 46343 8622966784    Medical: 8
+INFO 2025-10-04 20:15:24,847 rag_system 46343 8622966784    Finance: 8
+INFO 2025-10-04 20:15:25,313 medical_agent 46343 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:15:25,313 orchestrator 46343 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:15:25,710 SentenceTransformer 46343 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:15:25,710 SentenceTransformer 46343 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:15:26,560 faithfulness 46343 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:15:26,560 safety 46343 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:15:26,560 services 46343 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:15:26,568 autoreload 46343 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:18:00,727 autoreload 46343 8622966784 /Users/somesh/Documents/Fair-Agent/src/agents/finance_agent.py changed, reloading.
+INFO 2025-10-04 20:18:04,163 rag_system 46699 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:18:04,163 rag_system 46699 8622966784    Medical: 8
+INFO 2025-10-04 20:18:04,163 rag_system 46699 8622966784    Finance: 8
+INFO 2025-10-04 20:18:04,905 finance_agent 46699 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:18:04,912 rag_system 46699 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:18:04,912 rag_system 46699 8622966784    Medical: 8
+INFO 2025-10-04 20:18:04,912 rag_system 46699 8622966784    Finance: 8
+INFO 2025-10-04 20:18:05,362 medical_agent 46699 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:18:05,362 orchestrator 46699 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:18:05,703 SentenceTransformer 46699 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:18:05,703 SentenceTransformer 46699 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:18:06,576 faithfulness 46699 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:18:06,577 safety 46699 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:18:06,577 services 46699 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:18:06,584 autoreload 46699 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:18:34,096 autoreload 46699 8622966784 /Users/somesh/Documents/Fair-Agent/src/agents/finance_agent.py changed, reloading.
+INFO 2025-10-04 20:18:36,807 rag_system 46776 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:18:36,807 rag_system 46776 8622966784    Medical: 8
+INFO 2025-10-04 20:18:36,807 rag_system 46776 8622966784    Finance: 8
+INFO 2025-10-04 20:18:37,404 finance_agent 46776 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:18:37,411 rag_system 46776 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:18:37,412 rag_system 46776 8622966784    Medical: 8
+INFO 2025-10-04 20:18:37,412 rag_system 46776 8622966784    Finance: 8
+INFO 2025-10-04 20:18:37,894 medical_agent 46776 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:18:37,895 orchestrator 46776 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:18:38,313 SentenceTransformer 46776 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:18:38,314 SentenceTransformer 46776 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:18:39,186 faithfulness 46776 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:18:39,187 safety 46776 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:18:39,187 services 46776 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:18:39,195 autoreload 46776 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:18:54,121 autoreload 46776 8622966784 /Users/somesh/Documents/Fair-Agent/src/agents/finance_agent.py changed, reloading.
+INFO 2025-10-04 20:18:56,876 rag_system 46822 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:18:56,876 rag_system 46822 8622966784    Medical: 8
+INFO 2025-10-04 20:18:56,876 rag_system 46822 8622966784    Finance: 8
+INFO 2025-10-04 20:18:57,506 finance_agent 46822 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:18:57,514 rag_system 46822 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:18:57,514 rag_system 46822 8622966784    Medical: 8
+INFO 2025-10-04 20:18:57,514 rag_system 46822 8622966784    Finance: 8
+INFO 2025-10-04 20:18:57,980 medical_agent 46822 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:18:57,981 orchestrator 46822 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:18:58,384 SentenceTransformer 46822 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:18:58,384 SentenceTransformer 46822 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:18:59,276 faithfulness 46822 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:18:59,276 safety 46822 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:18:59,276 services 46822 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:18:59,283 autoreload 46822 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:19:04,772 autoreload 46822 8622966784 /Users/somesh/Documents/Fair-Agent/src/agents/medical_agent.py changed, reloading.
+INFO 2025-10-04 20:19:07,528 rag_system 46851 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:19:07,528 rag_system 46851 8622966784    Medical: 8
+INFO 2025-10-04 20:19:07,528 rag_system 46851 8622966784    Finance: 8
+INFO 2025-10-04 20:19:08,127 finance_agent 46851 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:19:08,135 rag_system 46851 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:19:08,135 rag_system 46851 8622966784    Medical: 8
+INFO 2025-10-04 20:19:08,135 rag_system 46851 8622966784    Finance: 8
+INFO 2025-10-04 20:19:08,647 medical_agent 46851 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:19:08,647 orchestrator 46851 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:19:09,053 SentenceTransformer 46851 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:19:09,053 SentenceTransformer 46851 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:19:09,878 faithfulness 46851 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:19:09,879 safety 46851 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:19:09,879 services 46851 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:19:09,888 autoreload 46851 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:19:32,126 autoreload 46851 8622966784 /Users/somesh/Documents/Fair-Agent/src/agents/medical_agent.py changed, reloading.
+INFO 2025-10-04 20:19:34,889 rag_system 46921 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:19:34,889 rag_system 46921 8622966784    Medical: 8
+INFO 2025-10-04 20:19:34,889 rag_system 46921 8622966784    Finance: 8
+INFO 2025-10-04 20:19:35,593 finance_agent 46921 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:19:35,601 rag_system 46921 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:19:35,601 rag_system 46921 8622966784    Medical: 8
+INFO 2025-10-04 20:19:35,601 rag_system 46921 8622966784    Finance: 8
+INFO 2025-10-04 20:19:36,109 medical_agent 46921 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:19:36,109 orchestrator 46921 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:19:36,521 SentenceTransformer 46921 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:19:36,521 SentenceTransformer 46921 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:19:37,373 faithfulness 46921 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:19:37,373 safety 46921 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:19:37,373 services 46921 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:19:37,381 autoreload 46921 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:20:14,380 autoreload 46921 8622966784 /Users/somesh/Documents/Fair-Agent/src/agents/medical_agent.py changed, reloading.
+INFO 2025-10-04 20:20:17,081 rag_system 47016 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:20:17,081 rag_system 47016 8622966784    Medical: 8
+INFO 2025-10-04 20:20:17,081 rag_system 47016 8622966784    Finance: 8
+INFO 2025-10-04 20:20:17,750 finance_agent 47016 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:20:17,757 rag_system 47016 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:20:17,757 rag_system 47016 8622966784    Medical: 8
+INFO 2025-10-04 20:20:17,757 rag_system 47016 8622966784    Finance: 8
+INFO 2025-10-04 20:20:18,292 medical_agent 47016 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:20:18,292 orchestrator 47016 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:20:18,728 SentenceTransformer 47016 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:20:18,728 SentenceTransformer 47016 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:20:19,612 faithfulness 47016 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:20:19,612 safety 47016 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:20:19,612 services 47016 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:20:19,620 autoreload 47016 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:25:12,421 rag_system 47889 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:25:12,421 rag_system 47889 8622966784    Medical: 8
+INFO 2025-10-04 20:25:12,421 rag_system 47889 8622966784    Finance: 8
+INFO 2025-10-04 20:25:13,710 finance_agent 47889 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:25:13,718 rag_system 47889 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:25:13,718 rag_system 47889 8622966784    Medical: 8
+INFO 2025-10-04 20:25:13,718 rag_system 47889 8622966784    Finance: 8
+INFO 2025-10-04 20:25:14,142 medical_agent 47889 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:25:14,142 orchestrator 47889 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:25:14,551 SentenceTransformer 47889 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:25:14,551 SentenceTransformer 47889 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:25:15,408 faithfulness 47889 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:25:15,408 safety 47889 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:25:15,408 services 47889 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:25:17,672 rag_system 47913 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:25:17,672 rag_system 47913 8622966784    Medical: 8
+INFO 2025-10-04 20:25:17,672 rag_system 47913 8622966784    Finance: 8
+INFO 2025-10-04 20:25:18,230 finance_agent 47913 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:25:18,237 rag_system 47913 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:25:18,237 rag_system 47913 8622966784    Medical: 8
+INFO 2025-10-04 20:25:18,237 rag_system 47913 8622966784    Finance: 8
+INFO 2025-10-04 20:25:18,667 medical_agent 47913 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:25:18,667 orchestrator 47913 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:25:19,025 SentenceTransformer 47913 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:25:19,025 SentenceTransformer 47913 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:25:19,776 faithfulness 47913 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:25:19,776 safety 47913 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:25:19,776 services 47913 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:25:19,781 autoreload 47913 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:25:23,084 basehttp 47913 6239154176 "GET / HTTP/1.1" 200 16512
+INFO 2025-10-04 20:25:24,675 basehttp 47913 6239154176 "GET /query/ HTTP/1.1" 200 44300
+INFO 2025-10-04 20:25:39,478 views 47913 6239154176 Processing query with model: llama3.2:latest
+INFO 2025-10-04 20:25:39,485 services 47913 6239154176 Switching models from gpt2 to llama3.2:latest
+INFO 2025-10-04 20:25:39,506 rag_system 47913 6239154176 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:25:39,507 rag_system 47913 6239154176    Medical: 8
+INFO 2025-10-04 20:25:39,507 rag_system 47913 6239154176    Finance: 8
+INFO 2025-10-04 20:25:39,517 finance_agent 47913 6239154176 Finance Agent using Ollama model: llama3.2:latest
+INFO 2025-10-04 20:25:39,528 rag_system 47913 6239154176 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:25:39,529 rag_system 47913 6239154176    Medical: 8
+INFO 2025-10-04 20:25:39,529 rag_system 47913 6239154176    Finance: 8
+INFO 2025-10-04 20:25:39,534 medical_agent 47913 6239154176 Medical Agent using Ollama model: llama3.2:latest
+INFO 2025-10-04 20:25:39,534 orchestrator 47913 6239154176 Orchestrator initialized successfully
+INFO 2025-10-04 20:25:39,538 services 47913 6239154176 Agents reinitialized with model: llama3.2:latest
+INFO 2025-10-04 20:25:39,539 finance_agent 47913 6239154176 ✅ Retrieved 0 evidence sources
+INFO 2025-10-04 20:25:39,539 finance_agent 47913 6239154176 Generating evidence-based response using Ollama (llama3.2:latest)
+INFO 2025-10-04 20:25:39,539 ollama_client 47913 6239154176 Calling Ollama API with model: llama3.2:latest
+INFO 2025-10-04 20:25:46,060 finance_agent 47913 6239154176 Enhanced response with Internet RAG (1 sources)
+INFO 2025-10-04 20:25:46,061 rag_system 47913 6239154176 Enhanced response with 0 evidence sources
+INFO 2025-10-04 20:25:46,062 finance_agent 47913 6239154176 Added evidence context (coverage: 0.00)
+INFO 2025-10-04 20:25:46,064 disclaimer_system 47913 6239154176 Added 1 disclaimers to response
+INFO 2025-10-04 20:25:46,064 disclaimer_system 47913 6239154176 Enhanced response with safety improvement: 0.20
+INFO 2025-10-04 20:25:46,065 finance_agent 47913 6239154176 Applied FAIR enhancement (safety: 0.20)
+INFO 2025-10-04 20:25:46,066 finance_agent 47913 6239154176 ✅ Disclaimer already present
+INFO 2025-10-04 20:25:46,067 finance_agent 47913 6239154176 Finance response enhanced with all systems: safety (+0.00), evidence (+0.00), reasoning (+0.00), internet (+0.00)
+INFO 2025-10-04 20:25:46,815 basehttp 47913 6239154176 "POST /api/query/process/ HTTP/1.1" 200 6575
+INFO 2025-10-04 20:26:12,620 views 47913 6239154176 Processing query with model: llama3.2:latest
+INFO 2025-10-04 20:26:12,629 medical_agent 47913 6239154176 ✅ Retrieved 0 medical evidence sources
+INFO 2025-10-04 20:26:12,630 medical_agent 47913 6239154176 Generating evidence-based medical response using Ollama (llama3.2:latest)
+INFO 2025-10-04 20:26:12,630 ollama_client 47913 6239154176 Calling Ollama API with model: llama3.2:latest
+INFO 2025-10-04 20:26:22,630 medical_agent 47913 6239154176 Enhanced response with Internet RAG for medical query (1 sources)
+INFO 2025-10-04 20:26:22,630 rag_system 47913 6239154176 Enhanced response with 0 evidence sources
+INFO 2025-10-04 20:26:22,631 medical_agent 47913 6239154176 Added medical evidence context (coverage: 0.00)
+INFO 2025-10-04 20:26:22,633 disclaimer_system 47913 6239154176 Added 1 disclaimers to response
+INFO 2025-10-04 20:26:22,634 disclaimer_system 47913 6239154176 Enhanced response with safety improvement: 0.25
+INFO 2025-10-04 20:26:22,634 medical_agent 47913 6239154176 Applied FAIR enhancement for medical response (safety: 0.25)
+INFO 2025-10-04 20:26:22,634 medical_agent 47913 6239154176 ✅ Medical disclaimer already present
+INFO 2025-10-04 20:26:22,635 medical_agent 47913 6239154176 Medical response enhanced with all systems: safety (+0.75), evidence (+0.00), reasoning (+0.00)
+INFO 2025-10-04 20:26:22,698 basehttp 47913 6239154176 "POST /api/query/process/ HTTP/1.1" 200 10666
+INFO 2025-10-04 20:32:09,866 rag_system 49111 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:32:09,866 rag_system 49111 8622966784    Medical: 8
+INFO 2025-10-04 20:32:09,866 rag_system 49111 8622966784    Finance: 8
+INFO 2025-10-04 20:32:10,750 finance_agent 49111 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:32:10,758 rag_system 49111 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:32:10,758 rag_system 49111 8622966784    Medical: 8
+INFO 2025-10-04 20:32:10,758 rag_system 49111 8622966784    Finance: 8
+INFO 2025-10-04 20:32:11,213 medical_agent 49111 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:32:11,213 orchestrator 49111 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:32:11,626 SentenceTransformer 49111 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:32:11,626 SentenceTransformer 49111 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:32:12,540 faithfulness 49111 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:32:12,540 safety 49111 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:32:12,540 services 49111 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:32:14,755 rag_system 49124 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:32:14,755 rag_system 49124 8622966784    Medical: 8
+INFO 2025-10-04 20:32:14,755 rag_system 49124 8622966784    Finance: 8
+INFO 2025-10-04 20:32:15,335 finance_agent 49124 8622966784 Finance Agent loaded with model: gpt2
+INFO 2025-10-04 20:32:15,343 rag_system 49124 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:32:15,343 rag_system 49124 8622966784    Medical: 8
+INFO 2025-10-04 20:32:15,343 rag_system 49124 8622966784    Finance: 8
+INFO 2025-10-04 20:32:15,841 medical_agent 49124 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:32:15,841 orchestrator 49124 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:32:16,132 SentenceTransformer 49124 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:32:16,132 SentenceTransformer 49124 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:32:16,925 faithfulness 49124 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:32:16,925 safety 49124 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:32:16,925 services 49124 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:32:16,931 autoreload 49124 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:34:46,546 autoreload 49124 8622966784 /Users/somesh/Documents/Fair-Agent/src/agents/finance_agent.py changed, reloading.
+INFO 2025-10-04 20:34:49,993 rag_system 49478 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:34:49,994 rag_system 49478 8622966784    Medical: 8
+INFO 2025-10-04 20:34:49,994 rag_system 49478 8622966784    Finance: 8
+INFO 2025-10-04 20:34:51,144 finance_agent 49478 8622966784 ✅ Finance Agent loaded with HuggingFace model: gpt2
+INFO 2025-10-04 20:34:51,152 rag_system 49478 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:34:51,152 rag_system 49478 8622966784    Medical: 8
+INFO 2025-10-04 20:34:51,152 rag_system 49478 8622966784    Finance: 8
+INFO 2025-10-04 20:34:51,700 medical_agent 49478 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:34:51,701 orchestrator 49478 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:34:52,246 SentenceTransformer 49478 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:34:52,246 SentenceTransformer 49478 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:34:53,091 faithfulness 49478 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:34:53,091 safety 49478 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:34:53,091 services 49478 8622966784 FAIR-Agent system initialized successfully
+INFO 2025-10-04 20:34:53,100 autoreload 49478 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:34:54,447 autoreload 49478 8622966784 /Users/somesh/Documents/Fair-Agent/webapp/fair_agent_app/services.py changed, reloading.
+INFO 2025-10-04 20:34:57,350 rag_system 49511 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:34:57,351 rag_system 49511 8622966784    Medical: 8
+INFO 2025-10-04 20:34:57,351 rag_system 49511 8622966784    Finance: 8
+INFO 2025-10-04 20:34:58,051 finance_agent 49511 8622966784 ✅ Finance Agent loaded with HuggingFace model: gpt2
+INFO 2025-10-04 20:34:58,061 rag_system 49511 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:34:58,061 rag_system 49511 8622966784    Medical: 8
+INFO 2025-10-04 20:34:58,061 rag_system 49511 8622966784    Finance: 8
+INFO 2025-10-04 20:34:58,473 medical_agent 49511 8622966784 Medical Agent loaded with model: gpt2
+INFO 2025-10-04 20:34:58,473 orchestrator 49511 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:34:58,824 SentenceTransformer 49511 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:34:58,825 SentenceTransformer 49511 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:34:59,669 faithfulness 49511 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:34:59,670 safety 49511 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:34:59,670 services 49511 8622966784 [STARTUP] FAIR-Agent initialized with Finance=gpt2, Medical=gpt2
+INFO 2025-10-04 20:34:59,682 autoreload 49511 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:35:14,646 autoreload 49511 8622966784 /Users/somesh/Documents/Fair-Agent/src/agents/medical_agent.py changed, reloading.
+INFO 2025-10-04 20:35:17,447 rag_system 49561 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:35:17,447 rag_system 49561 8622966784    Medical: 8
+INFO 2025-10-04 20:35:17,447 rag_system 49561 8622966784    Finance: 8
+INFO 2025-10-04 20:35:18,160 finance_agent 49561 8622966784 ✅ Finance Agent loaded with HuggingFace model: gpt2
+INFO 2025-10-04 20:35:18,169 rag_system 49561 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:35:18,169 rag_system 49561 8622966784    Medical: 8
+INFO 2025-10-04 20:35:18,169 rag_system 49561 8622966784    Finance: 8
+INFO 2025-10-04 20:35:18,643 medical_agent 49561 8622966784 ✅ Medical Agent loaded with HuggingFace model: gpt2
+INFO 2025-10-04 20:35:18,643 orchestrator 49561 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:35:19,029 SentenceTransformer 49561 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:35:19,030 SentenceTransformer 49561 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:35:19,908 faithfulness 49561 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:35:19,908 safety 49561 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:35:19,908 services 49561 8622966784 [STARTUP] FAIR-Agent initialized with Finance=gpt2, Medical=gpt2
+INFO 2025-10-04 20:35:19,916 autoreload 49561 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:54:24,923 rag_system 51924 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:54:24,923 rag_system 51924 8622966784    Medical: 8
+INFO 2025-10-04 20:54:24,923 rag_system 51924 8622966784    Finance: 8
+INFO 2025-10-04 20:54:25,792 finance_agent 51924 8622966784 ✅ Finance Agent loaded with HuggingFace model: gpt2
+INFO 2025-10-04 20:54:25,800 rag_system 51924 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:54:25,800 rag_system 51924 8622966784    Medical: 8
+INFO 2025-10-04 20:54:25,800 rag_system 51924 8622966784    Finance: 8
+INFO 2025-10-04 20:54:26,375 medical_agent 51924 8622966784 ✅ Medical Agent loaded with HuggingFace model: gpt2
+INFO 2025-10-04 20:54:26,375 orchestrator 51924 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:54:26,786 SentenceTransformer 51924 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:54:26,787 SentenceTransformer 51924 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:54:27,735 faithfulness 51924 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:54:27,735 safety 51924 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:54:27,735 services 51924 8622966784 [STARTUP] FAIR-Agent initialized with Finance=gpt2, Medical=gpt2
+INFO 2025-10-04 20:54:30,015 rag_system 51943 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:54:30,015 rag_system 51943 8622966784    Medical: 8
+INFO 2025-10-04 20:54:30,015 rag_system 51943 8622966784    Finance: 8
+INFO 2025-10-04 20:54:30,888 finance_agent 51943 8622966784 ✅ Finance Agent loaded with HuggingFace model: gpt2
+INFO 2025-10-04 20:54:30,898 rag_system 51943 8622966784 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:54:30,898 rag_system 51943 8622966784    Medical: 8
+INFO 2025-10-04 20:54:30,898 rag_system 51943 8622966784    Finance: 8
+INFO 2025-10-04 20:54:31,366 medical_agent 51943 8622966784 ✅ Medical Agent loaded with HuggingFace model: gpt2
+INFO 2025-10-04 20:54:31,366 orchestrator 51943 8622966784 Orchestrator initialized successfully
+INFO 2025-10-04 20:54:31,793 SentenceTransformer 51943 8622966784 Use pytorch device_name: mps
+INFO 2025-10-04 20:54:31,793 SentenceTransformer 51943 8622966784 Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO 2025-10-04 20:54:32,644 faithfulness 51943 8622966784 Initialized embedding model for semantic similarity
+WARNING 2025-10-04 20:54:32,645 safety 51943 8622966784 Safety config not found: /Users/somesh/Documents/Fair-Agent/config/safety_keywords.yaml
+INFO 2025-10-04 20:54:32,645 services 51943 8622966784 [STARTUP] FAIR-Agent initialized with Finance=gpt2, Medical=gpt2
+INFO 2025-10-04 20:54:32,649 autoreload 51943 8622966784 Watching for file changes with StatReloader
+INFO 2025-10-04 20:54:45,681 basehttp 51943 6235877376 "GET / HTTP/1.1" 200 16512
+INFO 2025-10-04 20:54:53,307 basehttp 51943 6235877376 "GET /query/ HTTP/1.1" 200 44300
+INFO 2025-10-04 20:55:13,721 views 51943 6235877376 [QUERY] 📝 Processing query with selected model: llama3.2:latest
+INFO 2025-10-04 20:55:13,727 services 51943 6235877376 [QUERY] 🔄 Switching models from gpt2 to llama3.2:latest
+INFO 2025-10-04 20:55:13,753 rag_system 51943 6235877376 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:55:13,753 rag_system 51943 6235877376    Medical: 8
+INFO 2025-10-04 20:55:13,753 rag_system 51943 6235877376    Finance: 8
+INFO 2025-10-04 20:55:13,765 finance_agent 51943 6235877376 ✅ Finance Agent using Ollama model: llama3.2:latest
+INFO 2025-10-04 20:55:13,778 rag_system 51943 6235877376 ✅ Loaded 16 evidence sources from config/evidence_sources.yaml
+INFO 2025-10-04 20:55:13,778 rag_system 51943 6235877376    Medical: 8
+INFO 2025-10-04 20:55:13,778 rag_system 51943 6235877376    Finance: 8
+INFO 2025-10-04 20:55:13,782 medical_agent 51943 6235877376 ✅ Medical Agent using Ollama model: llama3.2:latest
+INFO 2025-10-04 20:55:13,782 orchestrator 51943 6235877376 Orchestrator initialized successfully
+INFO 2025-10-04 20:55:13,787 services 51943 6235877376 [QUERY] 🔄 Agents reinitialized with model: llama3.2:latest
+INFO 2025-10-04 20:55:13,999 basehttp 51943 6235877376 "POST /api/query/process/ HTTP/1.1" 200 3055
+INFO 2025-10-04 20:55:52,585 views 51943 6235877376 [QUERY] 📝 Processing query with selected model: llama3.2:latest
+INFO 2025-10-04 20:55:52,588 finance_agent 51943 6235877376 ✅ Retrieved 1 evidence sources
+INFO 2025-10-04 20:55:52,588 finance_agent 51943 6235877376 Generating evidence-based response using Ollama (llama3.2:latest)
+INFO 2025-10-04 20:55:52,588 ollama_client 51943 6235877376 Calling Ollama API with model: llama3.2:latest
+INFO 2025-10-04 20:56:02,142 finance_agent 51943 6235877376 Enhanced response with Internet RAG (1 sources)
+INFO 2025-10-04 20:56:02,143 rag_system 51943 6235877376 Enhanced response with 1 evidence sources
+INFO 2025-10-04 20:56:02,143 finance_agent 51943 6235877376 Added evidence context (coverage: 0.33)
+INFO 2025-10-04 20:56:02,146 disclaimer_system 51943 6235877376 Added 1 disclaimers to response
+INFO 2025-10-04 20:56:02,148 disclaimer_system 51943 6235877376 Enhanced response with safety improvement: 0.20
+INFO 2025-10-04 20:56:02,148 finance_agent 51943 6235877376 Applied FAIR enhancement (safety: 0.20)
+INFO 2025-10-04 20:56:02,149 finance_agent 51943 6235877376 ✅ Response already well-structured
+INFO 2025-10-04 20:56:02,149 finance_agent 51943 6235877376 ✅ Disclaimer already present
+INFO 2025-10-04 20:56:02,150 finance_agent 51943 6235877376 Finance response enhanced with all systems: safety (+0.00), evidence (+0.00), reasoning (+0.00), internet (+0.00)
+INFO 2025-10-04 20:56:02,384 basehttp 51943 6235877376 "POST /api/query/process/ HTTP/1.1" 200 6546
